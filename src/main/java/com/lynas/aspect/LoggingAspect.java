@@ -20,4 +20,16 @@ public class LoggingAspect {
     public void logg() {
         System.out.println("logg");
     }
+
+    @Pointcut("within(com.lynas.controller.TestController)")
+    public void p2() {}
+
+    @Before("p2()")
+    public void a2() {
+        System.out.println("logg22222222");
+    }
+
+    @Pointcut("args(com.lynas.service.*)")
+    public void p3() {}
+
 }
