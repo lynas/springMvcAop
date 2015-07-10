@@ -28,8 +28,8 @@ public class LoggingAspect {
     public void a2() {
         System.out.println("logg22222222");
     }
-
+/*
     @Pointcut("args(com.lynas.service.*)")
     public void p3() {}
-
+*/
 }
